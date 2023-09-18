@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-17 08:19:22 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxSRTJLT0U7MjAyMy0wOS0xNzswODowOToxOSBQTTszMzcw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxSRTJLT0U7MjAyMy0wOS0xNzswODoxOToyMiBQTTsxOzM0NzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Firstexamscore" type="Real" array="False" size=""/>
+            <declare name="Secondexamscore" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <declare name="weightedscore1" type="Integer" array="False" size=""/>
+            <declare name="weightedscore2" type="Integer" array="False" size=""/>
+            <input variable="Firstexamscore"/>
+            <input variable="Secondexamscore"/>
+            <assign variable="weightedscore1" expression="Firstexamscore * 0.6"/>
+            <assign variable="weightedscore2" expression="Secondexamscore * 0.4"/>
+            <assign variable="Total" expression="weightedscore1 + weightedscore2"/>
+            <output expression="&quot;The Total score is &quot; &amp;Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
