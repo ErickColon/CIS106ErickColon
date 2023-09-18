@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-17 09:18:48 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxSRTJLT0U7MjAyMy0wOS0xNzswOToxNDoxNSBQTTszMzYz"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxSRTJLT0U7MjAyMy0wOS0xNzswOToxODo0OCBQTTsxOzM0ODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fixedcost" type="Real" array="False" size=""/>
+            <declare name="priceperunit" type="Real" array="False" size=""/>
+            <declare name="costperunit" type="Real" array="False" size=""/>
+            <declare name="breakevenpoint" type="Real" array="False" size=""/>
+            <declare name="unit" type="Real" array="False" size=""/>
+            <input variable="fixedcost"/>
+            <input variable="priceperunit"/>
+            <input variable="costperunit"/>
+            <assign variable="unit" expression="priceperunit - costperunit"/>
+            <assign variable="breakevenpoint" expression="fixedcost/unit"/>
+            <output expression="&quot;The break even point is &quot; &amp;breakevenpoint" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
