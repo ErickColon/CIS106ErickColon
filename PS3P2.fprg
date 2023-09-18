@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-17 08:26:00 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxSRTJLT0U7MjAyMy0wOS0xNzswODoyMDozMyBQTTszMzU5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxSRTJLT0U7MjAyMy0wOS0xNzswODoyNjowMCBQTTsxOzM0Njc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pricepershare" type="Real" array="False" size=""/>
+            <declare name="currentstock" type="Real" array="False" size=""/>
+            <declare name="quantityofstock" type="Real" array="False" size=""/>
+            <declare name="value" type="Real" array="False" size=""/>
+            <declare name="Price" type="Real" array="False" size=""/>
+            <input variable="pricepershare"/>
+            <input variable="currentstock"/>
+            <input variable="quantityofstock"/>
+            <assign variable="price" expression="currentstock - pricepershare"/>
+            <assign variable="Value" expression="price * quantityofstock"/>
+            <output expression="&quot;The Value is $&quot; &amp;Value" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
