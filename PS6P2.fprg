@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-01 08:11:06 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZSRzBDREs7MjAyMy0xMC0wMTswNzo1MjozNSBQTTszMzE1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZSRzBDREs7MjAyMy0xMC0wMTswODoxMTowNiBQTTsxOzM0MTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="partnumber" type="Integer" array="False" size=""/>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <input variable="partnumber"/>
+            <input variable="qty"/>
+            <if expression="partnumber = 10 or partnumber = 55">
+                <then>
+                    <assign variable="unitprice" expression="1.00"/>
+                </then>
+                <else>
+                    <if expression="partnumber = 99">
+                        <then>
+                            <assign variable="unitprice" expression="2.00"/>
+                        </then>
+                        <else>
+                            <if expression="partnumber = 80 or partnumber = 70">
+                                <then>
+                                    <assign variable="unitprice" expression="3.00"/>
+                                </then>
+                                <else>
+                                    <assign variable="unitprice" expression="5.00"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="unitprice * qty"/>
+            <output expression="partnumber" newline="True"/>
+            <output expression="qty" newline="True"/>
+            <output expression="unitprice" newline="True"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
